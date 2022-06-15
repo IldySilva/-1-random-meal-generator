@@ -1,0 +1,95 @@
+.mainColumn {
+
+    align-items: center;
+    width: 30%;
+    height: 30%;
+    background-color: rgb(118, 24, 0);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    z-index: 2;
+    justify-content: center;
+
+}
+
+span,
+h1 {
+
+    color: white;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+span {
+    font-size: 13px;
+
+}
+
+button {
+    margin-top: 20px;
+    width: 25%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: .1rem .1rem .7rem rgba(209, 209, 209, 0.504);
+    height: 2.2rem;
+    background-color: white;
+    border: none;
+
+}
+
+.meal {
+
+    margin-top: 1rem;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    border-radius: 10px 10px;
+    display: flex;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meal img {
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+.cardInfo{
+width: 50%;
+    margin:20px
+    
+}
+.cardInfo span {
+
+    color: black;
+
+}
+
+.cardInfo  .mealTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+
+}
+.steps{
+width: 70%;
+
+}
+.category {
+    margin: 20px;
+color: black;
+font-weight: bold;
+
+}

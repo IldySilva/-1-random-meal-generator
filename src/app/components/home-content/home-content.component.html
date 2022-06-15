@@ -1,0 +1,34 @@
+<div class="content">
+
+
+
+
+
+    <div class="mainColumn">
+
+        <h1>Fell Hungry?</h1>
+        <span>Get a random meal by clicking bellow</span>
+        <button (click)="getTheMeal()">Get a Meal</button>
+
+
+
+    </div>
+
+    
+    <div class="meal" *ngIf="meal!=null" >
+
+<img src={{meal.strMealThumb}} alt="" srcset="">
+<div class="cardInfo">
+
+  <span class="mealTitle">{{meal.strMeal}}</span>
+  <br>
+<span class="area">{{meal.strArea}}</span><br>
+<span class="steps">{{meal.strInstructions}}</span>
+
+
+</div>
+<span class="category">Category: {{meal.strCategory}}</span>
+    </div>
+ 
+
+</div>
