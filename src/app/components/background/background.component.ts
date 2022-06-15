@@ -1,3 +1,4 @@
+import { AppComponent } from './../../app.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./background.component.css']
 })
 export class BackgroundComponent implements OnInit {
+appComponent1=AppComponent;
 
-  constructor() { }
+
+  constructor(public appComponent: AppComponent) {  
+
+  }
 
   ngOnInit(): void {
+
   }
 
 }

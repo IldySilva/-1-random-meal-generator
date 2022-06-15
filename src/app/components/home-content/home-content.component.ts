@@ -1,5 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from 'src/app/app.component';
 import { Meal } from 'src/app/model/meal';
 import { MealService } from 'src/app/services/meal.service';
 
@@ -11,7 +12,7 @@ import { MealService } from 'src/app/services/meal.service';
 })
 export class HomeContentComponent implements OnInit {
 
-  constructor(private service: MealService) { }
+  constructor(private service: MealService,private appComponent: AppComponent) { }
 
   ngOnInit(): void {
   }
@@ -24,8 +25,9 @@ export class HomeContentComponent implements OnInit {
 
 this.meal=meal2.meals [0];
 console.log(this.meal)
+this.appComponent.headerData=this.meal.strMealThumb;
     })
-
+console.log(this.appComponent.headerData)
   }
 
 }
